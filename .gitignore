@@ -1,0 +1,25 @@
+# environments and build output
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+
+# podscribe runtime data: downloaded audio and transcripts are someone else's content, never commit them
+output/
+*.mp3
+*.wav
+*.part
+
+# local config and secrets
+.env
+.env.*
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

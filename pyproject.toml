@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "podscribe"
+version = "0.1.0"
+description = "Paste a Spotify episode link, get a timestamped transcript to hand to your LLM. Local, private, nothing saved."
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Ashton Dias"}]
+keywords = ["podcast", "transcription", "whisper", "mlx", "spotify", "fastapi"]
+requires-python = ">=3.10"
+dependencies = ["requests>=2.31", "feedparser>=6.0", "rapidfuzz>=3.0", "tqdm>=4.66", "faster-whisper>=1.0", "av>=14,<17", "fastapi>=0.110", "uvicorn>=0.29",
+  'mlx-whisper>=0.4; sys_platform == "darwin" and platform_machine == "arm64"']
+
+[project.scripts]
+podscribe = "podscribe.cli:main"
+
+[tool.setuptools]
+packages = ["podscribe", "podscribe.web"]
+
+[tool.setuptools.package-data]
+"podscribe.web" = ["static/*", "static/fonts/*"]
