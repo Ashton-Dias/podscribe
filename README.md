@@ -2,7 +2,7 @@
 
 <p align="center"><em>For the episodes that caught your attention, but you'd prefer to read.</em></p>
 
-<p align="center"><img src="docs/demo.gif" alt="podscribe demo: paste a Spotify episode link, watch it find the feed and transcribe, then download a timestamped Markdown transcript" width="400"></p>
+<p align="center"><img src="docs/demo.gif" alt="podscribe demo: paste a Spotify episode link, watch it find the feed and transcribe, then download a timestamped Markdown transcript" width="800"></p>
 
 Paste a Spotify episode link. podscribe finds the show's public RSS feed, transcribes the episode **locally on your machine**, and hands you a timestamped Markdown file, ready to give to the LLM of your choice for summary and study. There is no AI analysis inside the app, no API keys, and **nothing is saved**: the audio is deleted as soon as it is transcribed, and the transcript exists only in your browser tab until you download it.
 
